@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>DAILY PLAN</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>DAILY PLAN</h1>
+        </header>
+
+        <main>
+
+            <div class="contents">
+
+                <table>
+                <thead>
+                    <tr>
+                    <th class="timeTh">time</th>
+                    <th class="taskTh">task</th>
+                    <th class="notesTh">notes</th>
+                    <th class="actionTh"></th>
+                </tr>
+                </thead>
+                <tbody id="taskList">
+                </tbody>
+                </table>
+
+            </div>
+        </main>
+        
+
+        <div class="input-section">
+        <div class="form">
+            <input type="time" id="timeInput" placeholder="time">
+            <input type="text" id="taskInput" placeholder="task">
+            <input type="text" id="notesInput" placeholder="notes">
+            <button type="button" id="addButton">+</button>
+        </div>
+            <p id="errorText"></p>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

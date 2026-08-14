@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 32px;
+    width: 100%;
+    background-color: #699AC2;
+}
+
+h1{
+    color: #fff;
+    font-size: 48px;
+    display: inline-block;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 120px;
+}
+
+.contents {
+    color: grey;
+    font-size: 14px;
+    margin: 20px 40px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border-style: solid;
+    border-color: #fff;
+}
+
+th {
+    font-size: 16px;
+    background-color: whitesmoke;
+    border-width: 3px 15px;
+    border-color: whitesmoke;
+}
+
+.timeTh {
+    width: 15%;
+}
+
+.taskTh {
+    width: 30%;
+}
+
+.notesTh {
+    width: 40%;
+}
+
+.actionTh {
+    width: 15%;
+}
+
+td {
+    padding: 10px 30px;
+}
+
+.ntTd {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.input-section {
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #F4F3F6;
+    height: 120px;
+    width: 100%;
+    max-width: 800px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeInput, #taskInput, #notesInput {
+    height: 40px;
+    margin: 4px;
+    padding: 0 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+#timeInput {
+    width: 80px;
+}
+
+#taskInput {
+    width: 200px;
+}
+
+#notesInput {
+    width: 280px;
+}
+
+#addButton {
+    font-size: 20px;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    background-color: #69B6C2;
+    border-radius: 50%;
+    border: 0px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#errorText {
+    font-size: 12px;
+    font-family: inherit;
+    color: grey;
+    min-height: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.buttons {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.edit-button,
+.delete-button {
+    font-size: 14px;
+    color: grey;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.edit-button:hover {
+    background-color: whitesmoke;
+}
+
+.delete-button:hover {
+    background-color: whitesmoke;
+}
