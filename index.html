@@ -3,9 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>DAILY PLAN</title>
+        <meta name="description" content="a simple daily schedule management application.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
@@ -33,10 +39,15 @@
         
         <div class="input-section">
         <div class="form">
+
+            <div class="input-area">
             <input type="time" id="timeInput" placeholder="time">
             <input type="text" id="taskInput" placeholder="task">
             <input type="text" id="notesInput" placeholder="notes">
+            </div>
+
             <button type="button" id="addButton">+</button>
+            
         </div>
             <p id="errorText"></p>
         </div>
