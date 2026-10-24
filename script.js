@@ -37,7 +37,7 @@ function renderTasks() {
             let hour = Number(parts[0]);
             const minute = Number(parts[1]);
 
-            if (hour < 5) {
+            if (hour < 2) {
                 hour += 24;
             };
 
